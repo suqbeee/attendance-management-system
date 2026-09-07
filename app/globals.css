@@ -166,6 +166,35 @@ button:disabled { cursor: not-allowed; opacity: .5; }
 .northstar-employee-shell select { @apply min-h-11; }
 .northstar-employee-shell aside .nav-link { transition: color 150ms ease, background-color 150ms ease, box-shadow 150ms ease; }
 .northstar-employee-shell aside .nav-active { box-shadow: inset 3px 0 0 #60a5fa, 0 8px 20px rgb(0 15 45 / .18); }
+.northstar-manager-shell aside nav section { margin-bottom: 0; }
+.northstar-manager-shell aside nav section > p { display: none; }
+.northstar-manager-shell aside .nav-link { min-height: 46px; margin-bottom: 7px; padding: 0 14px; gap: 12px; color: #cbd5e1; font-size: 14px; transition: color 150ms ease, background-color 150ms ease, box-shadow 150ms ease; }
+.northstar-manager-shell aside .nav-link svg { width: 21px; height: 21px; color: #e2e8f0; }
+.northstar-manager-shell aside .nav-link:hover { background: rgb(15 45 82 / .85); color: white; }
+.northstar-manager-shell aside .nav-active { background: #1255ad; color: white; box-shadow: inset 3px 0 0 #60a5fa, 0 8px 20px rgb(0 15 45 / .18); }
+.northstar-manager-shell aside > div:last-child { border-color: #1e293b; }
+.northstar-manager-shell aside > div:last-child > div { background: #0f2747; }
+.northstar-manager-shell > div > header { box-shadow: 0 1px 0 rgb(15 23 42 / .025); }
+.northstar-manager-shell .people-table { min-width: 760px; }
+.northstar-manager-shell .people-table th:nth-child(2),
+.northstar-manager-shell .people-table td:nth-child(2),
+.northstar-manager-shell .people-table th:nth-child(5),
+.northstar-manager-shell .people-table td:nth-child(5) { display: none; }
+.northstar-manager-shell .attendance-register { min-width: 720px; }
+.northstar-manager-shell .attendance-register th:nth-child(3),
+.northstar-manager-shell .attendance-register td:nth-child(3),
+.northstar-manager-shell .attendance-register th:nth-child(8),
+.northstar-manager-shell .attendance-register td:nth-child(8) { display: none; }
+.northstar-manager-shell .attendance-register th,
+.northstar-manager-shell .attendance-register td { @apply px-3 py-3; }
+.northstar-manager-shell .schedule-table { min-width: 980px; }
+.northstar-manager-shell .schedule-table th { @apply bg-slate-50/60 text-[10px]; }
+.northstar-manager-shell .schedule-table th:not(:first-child),
+.northstar-manager-shell .schedule-table td:not(:first-child) { min-width: 112px; padding: 6px; }
+.northstar-manager-shell .schedule-table td:first-child { @apply px-4 py-3; }
+.northstar-manager-shell .schedule-cell { @apply min-h-20 border-slate-200 bg-white px-2.5 py-2 text-slate-800 shadow-sm hover:border-blue-300 hover:bg-blue-50/60; }
+.northstar-manager-shell .schedule-cell span { @apply text-slate-500; }
+.northstar-manager-shell .schedule-conflict { @apply border-amber-200 bg-amber-50 text-amber-900; }
 .northstar-employee-shell > div > header { box-shadow: 0 1px 0 rgb(15 23 42 / .025); }
 .northstar-employee-shell > div > header > a,
 .northstar-employee-shell > div > header > div:last-child > button { transition: background-color 150ms ease, box-shadow 150ms ease; }
@@ -217,6 +246,18 @@ button:disabled { cursor: not-allowed; opacity: .5; }
   .northstar-employee-shell .admin-sidebar > div:last-child { display: none; }
   .northstar-employee-shell > div > header > a { width: 44px; height: 44px; border: 0; }
   .northstar-employee-shell > div > header > div:last-child > button { border: 0; border-radius: 999px; padding: 4px; }
+  .northstar-manager-shell > aside { width: 226px !important; }
+  .northstar-manager-shell > div { padding-left: 226px !important; }
+  .northstar-manager-shell > div > header { height: 96px !important; padding-left: 36px !important; padding-right: 36px !important; background: rgb(255 255 255 / .96); }
+  .northstar-manager-shell > div > header > div:first-of-type p:first-child { font-size: 24px; line-height: 30px; }
+  .northstar-manager-shell main { max-width: none !important; padding: 12px 36px 32px !important; }
+  .northstar-manager-shell .admin-sidebar > div:first-child { height: 96px; padding-left: 20px; }
+  .northstar-manager-shell .admin-sidebar > div:first-child .northstar-mark { width: 44px; height: 44px; font-size: 44px; }
+  .northstar-manager-shell .admin-sidebar > div:first-child p { font-size: 26px; line-height: 32px; }
+  .northstar-manager-shell .admin-sidebar > nav { padding-top: 12px; }
+  .northstar-manager-shell .admin-sidebar > div:last-child { display: none; }
+  .northstar-manager-shell > div > header > a { width: 44px; height: 44px; border: 0; }
+  .northstar-manager-shell > div > header > div:last-child > button { border: 0; border-radius: 999px; padding: 4px; }
 }
 @media print {
   aside, header, .print\:hidden { display: none !important; }
