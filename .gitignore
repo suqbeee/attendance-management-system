@@ -37,6 +37,12 @@ yarn-error.log*
 # Supabase CLI local link and runtime metadata
 /supabase/.temp/
 
+# Local package/build caches
+/.cache/
+/.open-next/
+/.wrangler/
+.dev.vars*
+
 # vercel
 .vercel
 
